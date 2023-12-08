@@ -11,7 +11,7 @@ public class LargestIntegerUnitTests
     {
         var array = Array.Empty<int>();
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(0, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(0));
     }
 
     [Test]
@@ -19,7 +19,7 @@ public class LargestIntegerUnitTests
     {
         var array = new[] { 5 };
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(5, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(5));
     }
 
     [Test]
@@ -27,7 +27,7 @@ public class LargestIntegerUnitTests
     {
         var array = new[] { 1, 3, 2 };
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(3, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(3));
     }
 
     [Test]
@@ -35,7 +35,7 @@ public class LargestIntegerUnitTests
     {
         var array = new[] { -3, -1, -2 };
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(-1, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(-1));
     }
 
     [Test]
@@ -43,7 +43,7 @@ public class LargestIntegerUnitTests
     {
         var array = new[] { -1, 5, 3, 2, 0 };
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(5, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(5));
     }
 
     [Test]
@@ -51,6 +51,6 @@ public class LargestIntegerUnitTests
     {
         var array = new[] { int.MinValue, int.MinValue, int.MinValue };
         var result = LargestInteger.FindLargestInteger(array);
-        Assert.That(int.MinValue, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(int.MinValue));
     }
 }
