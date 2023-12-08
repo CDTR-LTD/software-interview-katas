@@ -8,7 +8,7 @@ public static class LargestInteger
     ///     A function that takes an array of integers as input and returns the largest integer in the array.
     ///     If the array is empty, the function should return 0.
     /// </summary>
-    public static int FindLargestInteger(int[] arr)
+    public static int Potatoes(int[] arr)
     {
         throw new NotImplementedException();
         // Your code here
