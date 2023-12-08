@@ -7,7 +7,6 @@ public class PalindromeTests
 {
     [TestCase("racecar")]
     [TestCase("Racecar")]
-    [TestCase("A man, a plan, a canal, Panama")]
     [TestCase("")]
     [TestCase(" ")]
     [TestCase("1234321")]
@@ -23,5 +22,12 @@ public class PalindromeTests
     {
         var result = Palindromes.IsPalindrome(input);
         Assert.That(result, Is.False);
+    }
+
+    [TestCase("A man, a plan, a canal, Panama")]
+    public void GivenInputIsComplexPalindrome_ThenTrueIsReturned(string input)
+    {
+        var result = Palindromes.IsPalindrome(input);
+        Assert.That(result, Is.True);
     }
 }
