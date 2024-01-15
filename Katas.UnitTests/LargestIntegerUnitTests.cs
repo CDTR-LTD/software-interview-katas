@@ -47,6 +47,14 @@ public class LargestIntegerUnitTests
     }
 
     [Test]
+    public void GivenFirstElementIsLargest_ThenLargestIsReturned()
+    {
+        var array = new[] { 10, 5, 3, 2, 0, -int.MaxValue };
+        var result = LargestInteger.FindLargestInteger(array);
+        Assert.That(result, Is.EqualTo(10));
+    }
+
+    [Test]
     public void GivenInputIsAllMinValue_ThenMinValueIsReturned()
     {
         var array = new[] { int.MinValue, int.MinValue, int.MinValue };
